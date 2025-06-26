@@ -177,6 +177,7 @@ ScrollReveal({
     duration:2000,
     delay:200,
     // reset: true ,
+
 });
 
 
