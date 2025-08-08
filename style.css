@@ -275,6 +275,14 @@ section{
     animation: animate 1s linear infinite;
 }
 
+/* Add by Asif jan for Rotate Tax and img make  responsive */
+
+
+
+
+/*  */
+
+
 .img-hero{
     position: relative;
     animation: floatImage 4s ease-in-out infinite;
@@ -314,7 +322,7 @@ section{
     content: "";
     position: absolute;
     inset: 20px;
-    background: #00aaff;
+    background: #f7f7f7;
     border-radius: 50%;
     z-index: 1;
 }
@@ -332,7 +340,7 @@ section{
     position: absolute;
     width: 490px;
     height: 490px;
-    background: #f2f6fb;
+    background: #d3af0d;
     border-radius: 50%;
     box-shadow: 0 1px 6px 5.94px rgba(0,0,0,0.2);
     animation: rotateText 30s linear infinite;
@@ -701,104 +709,6 @@ section{
 }
 
 
-/* ==================== Blog section css code ============================ */
-
-.blog-box{
-    padding: .5rem !important;
-}
-
-.blog{
-    position: relative;
-}
-
-.cards{
-    padding: 1rem .1rem;
-}
-
-.card{
-    background: var(--gradient-white-bg2);
-    box-shadow: rgba(0,0,0,0.18)0px 2px 4px;
-    padding: 1rem;
-    border-radius: 10px;
-}
-
-.card-top{
-    overflow: hidden;
-    border-radius: 10px 10px 0 0;
-}
-
-.card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: .3s;
-    display: block;
-}
-
-.card:hover img{
-    transform: scale(1.1);
-}
-
-.card-info{
-    padding-bottom: .5rem;
-}
-
-.card-info h2{
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
-
-.data{
-    display: block;
-    margin: .2rem 0;
-}
-
-.card .excerpt{
-    color: var(--font-color);
-    margin-bottom: 1.5rem;
-}
-
-.swiper-pagination{
-    position: relative !important;
-    margin-top: 3rem;
-}
-
-.swiper-pagination-bullet{
-    height: 10px !important;
-    width: 30px !important;
-    border-radius: 25px !important;
-    background: var(--gradient-color-bg) !important;
-}
-
-.blog .showcase img{
-    position: absolute;
-    width: 90px;
-    height: 90px;
-}
-
-.blog .showcase .circle{
-    filter: blur(3px);
-}
-
-.blog .showcase .ring{
-    top: 0;
-    left: -1%;
-}
-
-.blog .showcase .half-ring{
-    top: 10%;
-    right: 10%;
-}
-
-.blog .showcase .second-circle{
-    top: 30%;
-    left: 2%;
-    filter: blur(1px);
-}
-
-
-/* ==================== Contact section css code ============================ */
-
 .contactSkills{
     display: flex;
     justify-content: space-between;
@@ -822,6 +732,7 @@ section{
 .contact-info form input,
 .contact-info form textarea{
     /* width: 100%; */
+    
     padding: .8rem;
     border: 2px solid #e8e1e1;
     margin: .5rem 0;
@@ -855,7 +766,7 @@ form .btn{
     cursor: pointer;
     border: none;
 }
-
+ 
 /* ==================== Skills section css code ============================ */
 
 .skillBox{
