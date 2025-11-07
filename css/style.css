@@ -291,15 +291,19 @@ section{
 
 .img-hero img{
     position: relative;
-    width: 400px;
-    height: 499px;
-    z-index: 10;
+    width: 508px;
+    height: 560px;
+    z-index: 2;
+    left: -45px
+       
+    
+
 }
 
 .rotate-text{
     position: absolute;
     top: 10%;
-    left: -53px;
+    left: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
