@@ -592,7 +592,7 @@ section{
 }
 
 
-.services .showcase .ring{
+/* .services .showcase .ring{
     width: 100px;
     height: auto;
     position: absolute;
@@ -631,7 +631,7 @@ section{
     height: auto;
     bottom: 4%;
     right: 6%;
-}
+} */
 
 
 /* ==================== Services section css code ============================ */
@@ -659,6 +659,10 @@ section{
     background: var(--gradient-color-bg);
     color: #fff;
 }
+
+
+
+
 
 .portfolio-gallery{
     display: grid;
