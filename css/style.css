@@ -1200,3 +1200,43 @@ footer {
         }
     }
 }
+
+/* ==========================================================
+   FINAL MOBILE RESPONSIVE FIX - Hero Circle + Contact Section
+   ========================================================== */
+html, body{max-width:100%;overflow-x:hidden;}
+.home{display:flex;}
+.img-hero{position:relative;flex:0 0 auto;}
+.img-hero img{pointer-events:none;}
+.contact,.contactSkills,.contact-info{display:block !important;visibility:visible !important;opacity:1 !important;}
+
+@media (max-width: 991px){
+    header{height:auto !important;min-height:66px !important;}
+    .home{flex-direction:column-reverse !important;justify-content:flex-end;align-items:center;text-align:center;gap:0 !important;min-height:auto !important;padding-top:92px !important;padding-bottom:35px !important;}
+    .hero-info{width:100%;margin-top:18px !important;position:relative;z-index:5;}
+    .img-hero{width:min(88vw,380px) !important;height:min(88vw,380px) !important;margin:0 auto 12px auto !important;display:flex !important;align-items:center !important;justify-content:center !important;overflow:visible !important;transform:none !important;animation:none !important;}
+    .rotate-text{display:flex !important;position:absolute !important;inset:0 !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important;margin:0 !important;padding:0 !important;align-items:center !important;justify-content:center !important;overflow:visible !important;transform:none !important;z-index:1 !important;}
+    .rotate-text .text{position:absolute !important;inset:0 !important;width:100% !important;height:100% !important;border-radius:50% !important;z-index:1 !important;}
+    .rotate-text span{position:absolute !important;width:83% !important;height:83% !important;border-radius:50% !important;padding:0 !important;z-index:2 !important;}
+    .rotate-text span::before{inset:18px !important;}
+    .img-hero > img{position:absolute !important;top:50% !important;left:50% !important;width:70% !important;height:auto !important;max-width:none !important;transform:translate(-50%,-47%) !important;object-fit:contain !important;z-index:4 !important;}
+    .text b{top:0 !important;left:50% !important;transform-origin:0 calc(min(88vw,380px) / 2) !important;font-size:clamp(8px,2.1vw,12px) !important;font-weight:800 !important;letter-spacing:1px !important;}
+    .hero-info h3{margin-top:0 !important;margin-bottom:6px !important;font-size:1rem !important;line-height:1.2 !important;}
+    .hero-info h1{font-size:clamp(2.4rem,9vw,3.4rem) !important;line-height:1.05 !important;margin:0 0 10px !important;}
+    .text-animate{width:100% !important;max-width:100% !important;text-align:center !important;}
+    .text-animate h2{white-space:normal !important;font-size:clamp(1.35rem,5vw,1.75rem) !important;line-height:1.22 !important;margin:0 auto 14px !important;max-width:360px !important;text-align:center !important;letter-spacing:.3px !important;-webkit-text-stroke:.6px #770753 !important;}
+    .hero-info p{width:100% !important;max-width:360px !important;margin:0 auto !important;padding:0 8px !important;font-size:1rem !important;line-height:1.65 !important;}
+    .btn-box{width:100% !important;max-width:340px !important;margin:24px auto 45px !important;display:flex !important;justify-content:center !important;gap:14px !important;flex-wrap:wrap !important;}
+    .social-media{display:flex !important;justify-content:center !important;align-items:center !important;gap:12px !important;margin:0 auto 10px !important;}
+    section.contact{display:block !important;padding-top:55px !important;padding-bottom:55px !important;min-height:auto !important;clear:both !important;}
+    .contactSkills{display:flex !important;flex-direction:column !important;width:100% !important;}
+    .contact-info{width:100% !important;padding:18px !important;}
+}
+@media (max-width:430px){
+    .right-header .btn{font-size:.85rem !important;padding:9px 10px !important;}
+    .img-hero{width:92vw !important;height:92vw !important;}
+    .text b{transform-origin:0 46vw !important;font-size:8.5px !important;}
+    .img-hero > img{width:68% !important;}
+    .rotate-text span::before{inset:15px !important;}
+    .hero-info{margin-top:10px !important;}
+}
