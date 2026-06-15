@@ -170,19 +170,75 @@ function activeMenu(){
 activeMenu();
 window.addEventListener("scroll",activeMenu);
 
-// scroll reveal
+// Scroll animations now handled by AOS (see below) for consistency
+// and to avoid double-animation conflicts with ScrollReveal.
 
-ScrollReveal({ 
-    distance:"90px",
-    duration:2000,
-    delay:200,
-    // reset: true ,
 
+// ========== TYPED.JS ==========
+var typed = new Typed("#typed-text", {
+    strings: [
+        "Full Stack Web Developer",
+        "Creative Graphic Designer",
+        "Video and Audio Editor",
+        "Database Developer",
+        "UI/UX Designer",
+    ],
+    typeSpeed: 60,
+    backSpeed: 30,
+    backDelay: 1800,
+    startDelay: 400,
+    smartBackspace: true,
+    shuffle: false,
+    loop: true,
+    cursorChar: "_",
+    smartBackspace: true,
 });
 
+// ========== AOS ==========
+if (typeof AOS !== 'undefined') {
+    AOS.init({
+        once: true,
+        duration: 700,
+        easing: 'ease-out-cubic',
+        offset: 60,
+    });
+}
 
-ScrollReveal().reveal('.hero-info,.main-text,.proposal,.heading', { origin: "top" });
-ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', { origin: "left" });
-ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
-ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
+// ========== HEADER SHADOW ON SCROLL ==========
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.12)';
+    } else {
+        header.style.boxShadow = 'none';
+    }
+});
 
+// ========== EMAILJS CONTACT FORM ==========
+if (typeof emailjs !== 'undefined') {
+    emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+}
+
+var contactForm = document.getElementById("contact-form");
+if (contactForm) {
+    contactForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+        var btn = this.querySelector("button[type='submit']");
+        btn.innerText = "Sending...";
+        btn.disabled = true;
+        if (typeof emailjs !== 'undefined') {
+            emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+                .then(function() {
+                    btn.innerText = "Sent! ✅";
+                    contactForm.reset();
+                    setTimeout(function() { btn.innerText = "Send Message"; btn.disabled = false; }, 3500);
+                }, function() {
+                    btn.innerText = "Failed ❌";
+                    btn.disabled = false;
+                    setTimeout(function() { btn.innerText = "Send Message"; }, 3000);
+                });
+        } else {
+            setTimeout(function() { btn.innerText = "Send Message"; btn.disabled = false; }, 1000);
+        }
+    });
+}

@@ -11,6 +11,7 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 
 <body>
@@ -34,12 +35,12 @@
     </header>
 
     <section class="home" id="home">
-        <div class="hero-info">
+        <div class="hero-info" data-aos="fade-up" data-aos-duration="800">
             <h3><b>Welcome To my World</b></h3>
             <h1>Hi I'm Asif Jan</h1>
 
             <div class="text-animate">
-                <h2>Full Stack Web Developer & Creative Graphic Designer</h2>
+                <h2 id="typed-text" style="min-height:2.8rem;"></h2>
             </div>
 
             <p>I specialize in graphic design, video/audio editing, web development, and Access database management.
@@ -47,7 +48,7 @@
                 solutions tailored to meet project needs.</p>
 
             <div class="btn-box">
-                <a href="mailto:asifjan@example.com" class="btn">Hire Me Now! <i class='bx bx-right-arrow-alt'></i></a>
+                <a href="mailto:no.1asifjan@gmail.com" class="btn">Hire Me Now! <i class='bx bx-right-arrow-alt'></i></a>
                 <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
             </div>
 
@@ -94,15 +95,15 @@
     </section>
 
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="fade-right" data-aos-duration="900">
             <img src="img/aboutMe.jpg" alt="About Asif Jan" class="aboutHero">
             <div class="showcase-ring">
                 <img src="shapes/ring.png" alt="" class="ring">
                 <img src="shapes/circle.png" alt="" class="circle">
             </div>
         </div>
-        <div class="about-content">
-            <h2 class="heading">About Me</h2>
+        <div class="about-content" data-aos="fade-left" data-aos-duration="900">
+            <h2 class="heading" data-aos="fade-up">About Me</h2>
             <h3>7 Years of Full Stack Web Developer, Graphic Design & Video Editing</h3>
             <p>I'm a passionate designer with over 7 years of hands-on experience in crafting digital experiences across
                 web, graphic, and motion platforms. My mission is to deliver visually compelling and user-friendly
@@ -165,14 +166,14 @@
     </section>
 
     <section class="services" id="services">
-        <div class="main-text">
-            <h2 class="heading">My Services</h2>
+        <div class="main-text" data-aos="fade-up">
+            <h2 class="heading" data-aos="fade-up">My Services</h2>
             <span>Creative Solutions for Your Digital Needs</span>
         </div>
 
         <div class="allServices">
             <!-- Frontend Development -->
-            <div class="servicesItem">
+            <div class="servicesItem" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
                 <div class="icon-services">
                     <i class="fas fa-laptop-code"></i>
                     <span></span>
@@ -184,7 +185,7 @@
             </div>
 
             <!-- Backend Development -->
-            <div class="servicesItem">
+            <div class="servicesItem" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
                 <div class="icon-services">
                     <i class="fas fa-server"></i>
                     <span></span>
@@ -196,7 +197,7 @@
             </div>
 
             <!-- Website Development -->
-            <div class="servicesItem">
+            <div class="servicesItem" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
                 <div class="icon-services">
                     <i class="fas fa-globe"></i>
                     <span></span>
@@ -208,7 +209,7 @@
             </div>
 
             <!-- E-Commerce Development -->
-            <div class="servicesItem">
+            <div class="servicesItem" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0">
                 <div class="icon-services">
                     <i class="fas fa-shopping-cart"></i>
                     <span></span>
@@ -220,7 +221,7 @@
             </div>
 
             <!-- Graphic Design -->
-            <div class="servicesItem">
+            <div class="servicesItem" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
                 <div class="icon-services">
                     <i class="fas fa-paint-brush"></i>
                     <span></span>
@@ -232,7 +233,7 @@
             </div>
 
             <!-- Logo Design -->
-            <div class="servicesItem">
+            <div class="servicesItem" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
                 <div class="icon-services">
                     <i class="fas fa-pen-nib"></i>
                     <span></span>
@@ -244,7 +245,7 @@
             </div>
 
             <!-- Website Maintenance -->
-            <div class="servicesItem">
+            <div class="servicesItem" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
                 <div class="icon-services">
                     <i class="fas fa-tools"></i>
                     <span></span>
@@ -256,7 +257,7 @@
             </div>
 
             <!-- Responsive Web Design -->
-            <div class="servicesItem">
+            <div class="servicesItem" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0">
                 <div class="icon-services">
                     <i class="fas fa-mobile-alt"></i>
                     <span></span>
@@ -271,18 +272,18 @@
     </section>
     <!--   =====================portfolio start======================  -->
     <section class="portfolio" id="portfolio">
-        <div class="main-text">
-            <h2 class="heading">Portfolio</h2>
+        <div class="main-text" data-aos="fade-up">
+            <h2 class="heading" data-aos="fade-up">Portfolio</h2>
             <span>What I will do for you</span>
         </div>
-        <div class="fillter-buttons">
+        <div class="fillter-buttons" data-aos="fade-up" data-aos-duration="600">
             <button class="mixitup-control-active" data-filter="all">All</button>
             <button data-filter=".web">Web Development</button>
             <button data-filter=".graphic">Graphic Design</button>
             <button data-filter=".video">Video Editing</button>
         </div>
         <div class="portfolio-gallery">
-            <div class="portfolio-box mix web">
+            <div class="portfolio-box mix web" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                 <div class="portfolio-content">
                     <h3>Frontend Developer</h3>
                     <p>I specialize in creating modern, responsive websites using HTML, CSS, and JavaScript. My focus is
@@ -296,7 +297,7 @@
             </div>
 
 
-            <div class="portfolio-box mix web">
+            <div class="portfolio-box mix web" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <div class="portfolio-content">
                     <h3>Jamal International Degree College — Official Website Design</h3>
                     <p>A modern, responsive website designed for Jamal International Degree College, featuring academic
@@ -310,7 +311,7 @@
             </div>
 
             <!-- thinkPoint Web -->
-            <div class="portfolio-box mix web">
+            <div class="portfolio-box mix web" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
                 <div class="portfolio-content">
                     <h3>ThinkPoint — Professional Blogging Platform</h3>
                     <p>A modern and fully responsive blogging website designed to deliver engaging content, seamless
@@ -323,7 +324,7 @@
             </div>
 
             <!-- E-commerece Store -->
-            <div class="portfolio-box mix web">
+            <div class="portfolio-box mix web" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                 <div class="portfolio-content">
                     <h3>Online Store — Modern E-Commerce Platform</h3>
                     <p>A professionally designed and fully responsive e-commerce website featuring product listings,
@@ -337,7 +338,7 @@
             </div>
 
             <!-- industrial website -->
-            <div class="portfolio-box mix web">
+            <div class="portfolio-box mix web" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <div class="portfolio-content">
                     <h3>Industrial Solutions — Corporate Website</h3>
                     <p>A modern and fully responsive corporate website designed to showcase industrial services,
@@ -352,13 +353,13 @@
             </div>
 
             <!-- Attendance System -->
-            <div class="portfolio-box mix web">
+            <div class="portfolio-box mix web" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
                 <div class="portfolio-content">
                     <h3>Smart Attendance Management System</h3>
                     <p>A comprehensive attendance management solution designed for schools, colleges, businesses, and
                         organizations to efficiently track attendance, generate reports, and streamline workforce and
                         student management.</p>
-                    <a href="" target="_parent" class="readMore">Read More</a>
+                    <a href="#contact" class="readMore">Contact Me</a>
                 </div>
                 <div class="portfolio-img">
                     <img src="img/portfolio/atten.png" alt="Frontend Development Project">
@@ -366,13 +367,13 @@
             </div>
 
             <!-- Paper Generator System -->
-            <div class="portfolio-box mix web">
+            <div class="portfolio-box mix web" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                 <div class="portfolio-content">
                     <h3>Automated Question Paper Generator</h3>
                     <p>A powerful web-based system designed to generate professional examination papers in a single
                         click, helping educational institutions save time, maintain consistency, and streamline the
                         assessment process.</p>
-                    <a href="" target="_parent" class="readMore">Read More</a>
+                    <a href="#contact" class="readMore">Contact Me</a>
                 </div>
                 <div class="portfolio-img">
                     <img src="img/portfolio/paper.png" alt="Question Paper Generator System">
@@ -381,13 +382,13 @@
 
 
             <!-- Library Management System -->
-            <div class="portfolio-box mix web">
+            <div class="portfolio-box mix web" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <div class="portfolio-content">
                     <h3>Library Management System</h3>
                     <p>A comprehensive library management solution designed to efficiently manage books, members,
                         borrowing records, and inventory. The system supports both online and offline operations,
                         ensuring seamless access and uninterrupted workflow.</p>
-                    <a href="" target="_parent" class="readMore">Read More</a>
+                    <a href="#contact" class="readMore">Contact Me</a>
                 </div>
                 <div class="portfolio-img">
                     <img src="img/portfolio/library.png" alt="Library Management System">
@@ -396,7 +397,7 @@
 
 
 
-            <div class="portfolio-box mix graphic">
+            <div class="portfolio-box mix graphic" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
                 <div class="portfolio-content">
                     <h3>Logo Design</h3>
                     <p>I craft unique and impactful logos that reflect the identity and values of your brand. Using
@@ -410,7 +411,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box mix video">
+            <div class="portfolio-box mix video" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                 <div class="portfolio-content">
                     <h3>Audio Editing</h3>
                     <p>Using Adobe Audition, I enhance and refine audio for clarity, balance, and professional
@@ -426,7 +427,7 @@
 
 
             <!-- Zikar Counter -->
-            <div class="portfolio-box mix web">
+            <div class="portfolio-box mix web" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <div class="portfolio-content">
                     <h3>Zikar and Wazefa Counter</h3>
                     <p>
@@ -443,7 +444,7 @@
 
 
             <!-- Mr.X website for Software House -->
-            <div class="portfolio-box mix web">
+            <div class="portfolio-box mix web" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
                 <div class="portfolio-content">
                     <h3>Mr.X Software House Website</h3>
                     <p>
@@ -460,7 +461,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box mix video">
+            <div class="portfolio-box mix video" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                 <div class="portfolio-content">
                     <h3>Video Editing</h3>
                     <p>I edit and produce high-quality videos using Adobe Premiere Pro, combining visuals, sound,
@@ -474,7 +475,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box mix graphic">
+            <div class="portfolio-box mix graphic" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                 <div class="portfolio-content">
                     <h3>Graphic Designing</h3>
                     <p>I create visually compelling designs for logos, posters, visiting cards, and brochures that
@@ -488,7 +489,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-box mix web">
+            <div class="portfolio-box mix web" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
                 <div class="portfolio-content">
                     <h3>Portfolio Website Design</h3>
                     <p>I design sleek and responsive portfolio websites that showcase your work, skills, and brand
@@ -507,12 +508,12 @@
         <div class="skills">
             <div class="container">
                 <div class="skillBox">
-                    <div class="main-text">
-                        <h2 class="heading">My Skills</h2>
+                    <div class="main-text" data-aos="fade-up">
+                        <h2 class="heading" data-aos="fade-up">My Skills</h2>
                         <span>Let Me Help you</span>
                     </div>
                     <div class="skill-wrap">
-                        <div class="skill">
+                        <div class="skill" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
                             <div class="outer-circle">
                                 <div class="inner-circle">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
@@ -524,17 +525,12 @@
                                         </defs>
                                         <circle cx="85" cy="85" r="75" stroke-linecap="round" />
                                     </svg>
-                                    <h2 class="counter">
-                                        <span data-target="92">0</span>%
-                                    </h2>
+                                    <h2 class="counter"><span data-target="90">0</span>%</h2>
                                 </div>
                             </div>
-                            <div class="sk-title">
-                                Graphic Designing
-                            </div>
+                            <div class="sk-title">HTML / CSS / JS</div>
                         </div>
-
-                        <div class="skill">
+                        <div class="skill" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">
                             <div class="outer-circle">
                                 <div class="inner-circle">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
@@ -546,17 +542,12 @@
                                         </defs>
                                         <circle cx="85" cy="85" r="75" stroke-linecap="round" />
                                     </svg>
-                                    <h2 class="counter">
-                                        <span data-target="89">0</span>%
-                                    </h2>
+                                    <h2 class="counter"><span data-target="85">0</span>%</h2>
                                 </div>
                             </div>
-                            <div class="sk-title">
-                                Video/Audio Editing
-                            </div>
+                            <div class="sk-title">PHP / MySQL</div>
                         </div>
-
-                        <div class="skill">
+                        <div class="skill" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300">
                             <div class="outer-circle">
                                 <div class="inner-circle">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
@@ -568,17 +559,12 @@
                                         </defs>
                                         <circle cx="85" cy="85" r="75" stroke-linecap="round" />
                                     </svg>
-                                    <h2 class="counter">
-                                        <span data-target="86">0</span>%
-                                    </h2>
+                                    <h2 class="counter"><span data-target="82">0</span>%</h2>
                                 </div>
                             </div>
-                            <div class="sk-title">
-                                HTML/CSS/JavaScript
-                            </div>
+                            <div class="sk-title">MongoDB / Firebase</div>
                         </div>
-
-                        <div class="skill">
+                        <div class="skill" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="0">
                             <div class="outer-circle">
                                 <div class="inner-circle">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
@@ -590,17 +576,12 @@
                                         </defs>
                                         <circle cx="85" cy="85" r="75" stroke-linecap="round" />
                                     </svg>
-                                    <h2 class="counter">
-                                        <span data-target="85">0</span>%
-                                    </h2>
+                                    <h2 class="counter"><span data-target="88">0</span>%</h2>
                                 </div>
                             </div>
-                            <div class="sk-title">
-                                Access Database
-                            </div>
+                            <div class="sk-title">SQL Database</div>
                         </div>
-
-                        <div class="skill">
+                        <div class="skill" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
                             <div class="outer-circle">
                                 <div class="inner-circle">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
@@ -612,17 +593,12 @@
                                         </defs>
                                         <circle cx="85" cy="85" r="75" stroke-linecap="round" />
                                     </svg>
-                                    <h2 class="counter">
-                                        <span data-target="80">0</span>%
-                                    </h2>
+                                    <h2 class="counter"><span data-target="85">0</span>%</h2>
                                 </div>
                             </div>
-                            <div class="sk-title">
-                                SQL Database
-                            </div>
+                            <div class="sk-title">MS Access DB</div>
                         </div>
-
-                        <div class="skill">
+                        <div class="skill" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">
                             <div class="outer-circle">
                                 <div class="inner-circle">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
@@ -634,22 +610,53 @@
                                         </defs>
                                         <circle cx="85" cy="85" r="75" stroke-linecap="round" />
                                     </svg>
-                                    <h2 class="counter">
-                                        <span data-target="97">0</span>%
-                                    </h2>
+                                    <h2 class="counter"><span data-target="92">0</span>%</h2>
                                 </div>
                             </div>
-                            <div class="sk-title">
-                                Ms.Word/Ms.Excel/Ms.PowerPoint
-                            </div>
+                            <div class="sk-title">Graphic Design</div>
                         </div>
+                        <div class="skill" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                    </svg>
+                                    <h2 class="counter"><span data-target="88">0</span>%</h2>
+                                </div>
+                            </div>
+                            <div class="sk-title">Video / Audio Editing</div>
+                        </div>
+                        <div class="skill" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="0">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                    </svg>
+                                    <h2 class="counter"><span data-target="95">0</span>%</h2>
+                                </div>
+                            </div>
+                            <div class="sk-title">MS Office</div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="proposal">
+    <div class="proposal" data-aos="fade-up" data-aos-duration="800">
         <div class="text-box">
             <h2><span>Get In Touch</span></h2>
             <br>
@@ -694,9 +701,9 @@
     </div>
 
     <section class="contact" id="contact">
-        <div class="contactSkills">
-            <div class="contact-info">
-                <div class="main-text">
+        <div class="contactSkills" data-aos="fade-up" data-aos-duration="800">
+            <div class="contact-info" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div class="main-text" data-aos="fade-up">
                     <h2 class="heading">Contact Me</h2>
                     <span>get in touch with me</span>
                 </div>
@@ -728,11 +735,13 @@
     </footer>
 
     <!-- scroll reveal  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- mixitup cdn js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
